@@ -213,6 +213,7 @@ _clickhouse_profiles_custom:
 _clickhouse_users_custom:
   - { name: "{{rsys_creds.0}}", password: "{{rsys_creds.1}}", networks: "{{ local_nets }}", profile: "sys_prof", quota: "default" }
   - { name: "{{ruser_creds.0}}", password: "{{ruser_creds.1}}", networks: "{{ local_nets }}", profile: "user_prof", quota: "default" }
+_clickhouse_version: "20.6.3.28"
 _clickhouse_logger:
   level: trace
   log: "{{ dirs.clickhouse_log }}/clickhouse-server.log"
